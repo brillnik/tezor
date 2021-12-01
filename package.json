@@ -1,30 +1,20 @@
 {
-  "name": "tezos-smartpy-example",
-  "version": "2.0.0",
-  "description": "Tezos SmartPy Example Box =================",
-  "dependencies": {},
-  "devDependencies": {
-    "ganache-cli": "6.12.0-tezos.0"
-  },
+  "name": "tezos",
+  "version": "1.0.0",
+  "description": "cofigurarion of tezos",
+  "main": "index.js",
   "scripts": {
-    "start-sandbox": "ganache-cli --flavor tezos --seed alice",
-    "compile":"truffle compile",
-    "deploy":"truffle migrate"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "./compile.sh",
+    "deploy": "ts-node deployment/deploy.ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/truffle-box/tezos-smartpy-example-box.git"
-  },
-  "keywords": [
-    "tezos",
-    "blockchain",
-    "truffle",
-    "smartpy"
-  ],
-  "author": "Cruz Molina <cruz@trufflesuite.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/truffle-box/tezos-smartpy-example-box/issues"
-  },
-  "homepage": "https://github.com/truffle-box/tezos-smartpy-example-box#readme"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@taquito/signer": "^10.2.1",
+    "@taquito/taquito": "^10.2.1",
+    "dotenv": "^10.0.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
 }
